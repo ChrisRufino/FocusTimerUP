@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temporizador estilo pomodoro 2.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Focus Time 2.0</title>
+
+    <link rel="shortcut icon" href="./assests/favicon.svg" type="image/x-svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div #app>
+      <section id="counter" class="flex">
+        <span>00</span>
+        <span>:</span>
+        <span>00</span>
+      </section>
+
+      <section id="controls" class="flex">
+        <button class="ph ph-play-circle">
+          <span class="sr-only">Start Counter</span>
+        </button>
+        <button class="ph ph-stop-circle">
+          <span class="sr-only">Stop Counter</span>
+        </button>
+        <button class="ph ph-plus-circle">
+          <span class="sr-only">Add minutes</span>
+        </button>
+        <button class="ph ph-minus-circle">
+          <span class="sr-only">decrease minutes</span>
+        </button>
+      </section>
+
+      <section id="seasons" class="flex">
+        <button><img src="./assets/fire.svg" alt="fire" /></button>
+        <button><img src="./assets/coffe.svg" alt="coffe shop" /></button>
+        <button class="ph ph-cloud-snow"></button>
+      </section>
+    </div>
+  </body>
+</html>

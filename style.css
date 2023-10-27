@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-buttons: #e1e1e6;
+  --blue-buttons: #02799d;
+  --number-Timer: #323238;
+  --img-white: #ffffff;
+  font-size: clamp(40%, 1 + 2vw, 62, 5%);
+}
+
+html.blue {
+  --hue: 196;
+  --bg-buttons: hsl(var(--hue), 97%, 31%);
+  --blue-buttons: hsl(var(--hue), 99%, 89%);
+  --number-Timer: hsl(var(--hue), 6%, 21%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#app {
+  display: grid;
+  justify-content: center;
+}
+#app section #counter {
+  text-transform: uppercase;
+}
+
+.ph {
+  width: 100%;
+  height: 14rem;
+}
