@@ -19,34 +19,38 @@
     />
   </head>
   <body>
-    <div #app>
-      <section id="counter" class="flex">
-        <span>00</span>
-        <span>:</span>
-        <span>00</span>
-      </section>
+    <main #app>
+      <div class="timer">
+        <section id="counter" class="flex">
+          <span>00</span>
+          <span>:</span>
+          <span>00</span>
+        </section>
 
-      <section id="controls" class="flex">
-        <button class="ph ph-play-circle">
-          <span class="sr-only">Start Counter</span>
-        </button>
-        <button class="ph ph-stop-circle">
-          <span class="sr-only">Stop Counter</span>
-        </button>
-        <button class="ph ph-plus-circle">
-          <span class="sr-only">Add minutes</span>
-        </button>
-        <button class="ph ph-minus-circle">
-          <span class="sr-only">decrease minutes</span>
-        </button>
-      </section>
+        <section id="controls" class="flex">
+          <button class="ph ph-play-circle">
+            <span class="sr-only">Start Counter</span>
+          </button>
+          <button class="ph ph-stop-circle">
+            <span class="sr-only">Stop Counter</span>
+          </button>
+          <button class="ph ph-plus-circle">
+            <span class="sr-only">Add minutes</span>
+          </button>
+          <button class="ph ph-minus-circle">
+            <span class="sr-only">decrease minutes</span>
+          </button>
+        </section>
+      </div>
 
-      <!-- Em análise -->
-      <!-- <section id="seasons" class="flex">
-        <button><img src="./assets/fire.svg" alt="fire" /></button>
-        <button><img src="./assets/coffe.svg" alt="coffe shop" /></button>
-        <button class="ph ph-cloud-snow"></button>
-      </section> -->
-    </div>
+      <div class="box">
+        <section id="seasons">
+          <button class="ph ph-tree"></button>
+          <button class="ph ph-cloud-snow"></button>
+          <button class="ph ph-storefront"></button>
+          <button class="ph ph-fire"></button>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
