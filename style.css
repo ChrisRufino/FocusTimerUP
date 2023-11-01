@@ -13,11 +13,11 @@
   font-size: clamp(40%, 1 + 2vw, 62, 5%);
 }
 
-html.blue {
-  --hue: 196;
-  --bg-buttons: hsl(var(--hue), 97%, 31%);
-  --blue-buttons: hsl(var(--hue), 99%, 89%);
-  --number-Timer: hsl(var(--hue), 6%, 21%);
+html.sound {
+  --bg-buttons: #e1e1e6;
+  --blue-buttons: #02799d;
+  --number-Timer: #323238;
+  --img-white: #ffffff;
 }
 
 .sr-only {
@@ -91,4 +91,12 @@ button {
 
   height: 14rem;
   width: 14rem;
+}
+
+.sound .ph-tree,
+.sound .ph-cloud-snow,
+.sound .ph-storefront,
+.sound .ph-fire {
+  background-color: var(--blue-buttons);
+  color: var(--img-white);
 }
