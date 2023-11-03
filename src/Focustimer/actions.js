@@ -42,7 +42,7 @@ export function soundStore() {
 }
 
 export function soundFire() {
-  toggleSoundClass("soundFire", "isSoundStore")
+  toggleSoundClass("soundFire", "isSoundFire")
 
   music.fireSound.play()
 
