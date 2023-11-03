@@ -53,3 +53,8 @@ export function soundFire() {
 
 // as ações abaixo será referente aos botões do Timer
 // the actions below will refer to the Timer buttons
+
+// export function startCount() {
+
+//   isRunning = document.documentElement.classList.toggle("running")
+// }
