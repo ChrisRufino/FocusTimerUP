@@ -1,9 +1,12 @@
 import states from "./states.js"
 import * as events from "./events.js"
+import * as timer from "./timer.js"
 
 export function start(minutes, seconds) {
-  start.minutes = minutes
-  start.seconds = seconds
+  states.minutes = minutes
+  states.seconds = seconds
+
+  timer.updateDisplay()
 
   events.registerSeasons()
 }

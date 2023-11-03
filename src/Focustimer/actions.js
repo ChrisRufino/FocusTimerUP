@@ -50,3 +50,6 @@ export function soundFire() {
     music.fireSound.pause()
   }
 }
+
+// as ações abaixo será referente aos botões do Timer
+// the actions below will refer to the Timer buttons
