@@ -2,6 +2,10 @@ export default {
   minutes: 25,
   seconds: 0,
 
-  isRunning: false,
+  isSoundTree: false,
   isMute: true,
+  isRunning: false,
+  isSoundCloud: false,
+  isSoundStore: false,
+  isSoundFire: false,
 }

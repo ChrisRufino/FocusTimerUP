@@ -93,10 +93,20 @@ button {
   width: 14rem;
 }
 
-.sound .ph-tree,
-.sound .ph-cloud-snow,
-.sound .ph-storefront,
-.sound .ph-fire {
+.soundTree .ph-tree,
+.soundCloud .ph-cloud-snow,
+.soundStore .ph-storefront,
+.soundFire .ph-fire {
   background-color: var(--blue-buttons);
   color: var(--img-white);
+}
+
+/* talvez não precise desse código abaixo */
+
+html:not(.soundTree) .ph-tree,
+html:not(.soundCloud) .ph-cloud-snow,
+html:not(.soundStore) .ph-storefront,
+html:not(.soundFire) .ph-fire {
+  background-color: var(--bg-buttons);
+  color: var(--number-Timer);
 }
