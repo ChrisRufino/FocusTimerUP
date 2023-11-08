@@ -21,34 +21,6 @@
 <br />
 
 
-## 🗒️ **INSTALAÇÃO**
-
-### Instalação local:
-
-1. Clone o repositório
-
-```
-git clone https://github.com/diogo-kappaun/focus-timer
-```
-
-2. Vá até o repositório clonado
-
-```
-cd focus-timer
-```
-
-3. Instale as dependências
-
-```
-npm install vite
-```
-
-4. Execute o app
-
-```
-npm run web
-```
-
 <br />
 
 
