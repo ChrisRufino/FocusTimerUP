@@ -9,4 +9,6 @@ export function start(minutes, seconds) {
   timer.updateDisplay()
 
   events.registerSeasons()
+
+  events.registerControls()
 }

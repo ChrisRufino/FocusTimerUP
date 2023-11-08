@@ -8,4 +8,6 @@ export default {
   isSoundCloud: false,
   isSoundStore: false,
   isSoundFire: false,
+
+  countdownID: null,
 }

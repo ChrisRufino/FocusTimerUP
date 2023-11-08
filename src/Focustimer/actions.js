@@ -1,5 +1,30 @@
 import states from "./states.js"
 import * as music from "./audios.js"
+import * as timer from "./timer.js"
+
+// button countdown
+
+export function startCount() {
+  states.isRunning = document.documentElement.classList.toggle("running")
+
+  timer.countdown()
+}
+
+export function pauseCount() {
+  states.isRunning === false
+  document.documentElement.classList.remove("running")
+  timer.updateDisplay()
+}
+
+export function moreCount() {
+  timer.fiveMinutes()
+}
+
+export function minusCount() {
+  timer.removeMinutes()
+}
+
+// button imagens
 
 export function toggleSoundClass(className, objetosStates) {
   states[objetosStates] = document.documentElement.classList.toggle(className)
@@ -13,12 +38,6 @@ export function soundTree() {
   if (states.isSoundTree === false) {
     music.forestSound.pause()
   }
-
-  // Object.keys(states).forEach((key) => {
-  //   if (key !== "isSoundTree") {
-  //     states[key] = false
-  //   }
-  // })
 }
 
 export function soundCloud() {
@@ -50,11 +69,3 @@ export function soundFire() {
     music.fireSound.pause()
   }
 }
-
-// as ações abaixo será referente aos botões do Timer
-// the actions below will refer to the Timer buttons
-
-// export function startCount() {
-
-//   isRunning = document.documentElement.classList.toggle("running")
-// }

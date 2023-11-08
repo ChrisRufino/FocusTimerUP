@@ -110,3 +110,7 @@ html:not(.soundFire) .ph-fire {
   background-color: var(--bg-buttons);
   color: var(--number-Timer);
 }
+.running .ph-play-circle,
+.running .ph-pause-circle {
+  background: red;
+}
